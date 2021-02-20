@@ -8,6 +8,5 @@ import android.view.ViewGroup
 import com.example.stockmanagement.R
 
 
-class LoginFragment : Fragment(R.layout.fragment_login) {
-
+class MainFragment : Fragment(R.layout.fragment_main) {
 }
