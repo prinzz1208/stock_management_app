@@ -8,10 +8,6 @@ import android.view.ViewGroup
 import com.example.stockmanagement.R
 
 
-class LoginFragment : Fragment(R.layout.fragment_login) {
+class SignupFragment : Fragment(R.layout.fragment_signup) {
 
-  override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-    super.onViewCreated(view, savedInstanceState)
-
-  }
 }
