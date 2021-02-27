@@ -1,6 +1,7 @@
 package com.example.stockmanagement.models.db.tables
 
 import androidx.room.*
+import androidx.room.Entity
 
 @Entity(tableName = "category")
 data class Category(
