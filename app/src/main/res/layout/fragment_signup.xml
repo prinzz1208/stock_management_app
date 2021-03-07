@@ -8,6 +8,52 @@
     android:background="@color/color_primary"
     tools:context=".ui.fragments.auth.SignupFragment">
 
+    <TextView
+        android:id="@+id/signupEmailText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/quicksand_medium"
+        android:text="Mobile No."
+        android:textColor="@color/color_text_black"
+        app:layout_constraintBottom_toTopOf="@+id/signupMobileNoInput"
+        app:layout_constraintStart_toStartOf="@+id/signupMobileNoInput" />
+
+    <EditText
+        android:id="@+id/signupMobileNoInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/util_button_outline"
+        android:ems="10"
+        android:fontFamily="@font/quicksand_medium"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="12dp"
+        android:paddingTop="15dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signupOrText" />
+
+    <TextView
+        android:id="@+id/signupOrText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/quicksand"
+        android:gravity="center"
+        android:text="OR"
+        android:textColor="@color/color_text_black"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/signupEmailIdInput"
+        tools:layout_editor_absoluteX="188dp" />
+
     <EditText
         android:id="@+id/signupFirstNameInput"
         android:layout_width="0dp"
@@ -100,8 +146,6 @@
         android:id="@+id/signupEmailText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/quicksand_medium"
         android:text="Email ID"
@@ -126,5 +170,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signupEmailIdInput" />
+        app:layout_constraintTop_toBottomOf="@+id/signupMobileNoInput"
+        app:layout_constraintVertical_bias="0.42" />
 </androidx.constraintlayout.widget.ConstraintLayout>
