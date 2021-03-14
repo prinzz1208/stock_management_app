@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/otpConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_primary"
+    tools:context=".ui.fragments.auth.OtpFragment">
+
+    <EditText
+        android:id="@+id/otpCodeInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/util_button_outline"
+        android:ems="10"
+        android:fontFamily="@font/source_sans_pro"
+        android:hint="Enter OTP sent on email or phone"
+        android:inputType="textPersonName"
+        android:paddingLeft="12dp"
+        android:paddingTop="15dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="15dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/otpVerifyButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:layout_marginBottom="148dp"
+        android:background="@drawable/util_button_solid"
+        android:fontFamily="@font/quicksand_medium"
+        android:includeFontPadding="true"
+        android:text="Verify"
+        android:textColor="@color/color_white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/otpResendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/util_button_solid"
+        android:fontFamily="@font/quicksand_medium"
+        android:includeFontPadding="false"
+        android:text="Resend OTP"
+        android:textAllCaps="false"
+        android:textColor="@color/color_white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/otpCodeInput"
+        app:layout_constraintTop_toBottomOf="@+id/otpCodeInput" />
+
+    <TextView
+        android:id="@+id/otpLabelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="29dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="OTP sent to "
+        android:textColor="@color/color_text_black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/otpCodeInput"
+        app:layout_constraintStart_toStartOf="@+id/otpCodeInput" />
+
+    <TextView
+        android:id="@+id/otpEmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:text="Email"
+        android:textColor="@color/color_secondary"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/otpLabelText"
+        app:layout_constraintTop_toTopOf="@+id/otpLabelText" />
+
+    <TextView
+        android:id="@+id/otpRecieveText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto"
+        android:text=" Didn't recieve otp? "
+        android:textColor="@color/color_text_black"
+        app:layout_constraintStart_toStartOf="@+id/otpCodeInput"
+        app:layout_constraintTop_toBottomOf="@+id/otpCodeInput" />
+</androidx.constraintlayout.widget.ConstraintLayout>
