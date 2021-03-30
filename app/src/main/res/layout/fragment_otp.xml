@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color_primary"
-    tools:context=".ui.fragments.auth.OtpFragment">
+    tools:context=".presentation.ui.fragments.auth.OtpFragment">
 
     <EditText
         android:id="@+id/otpCodeInput"

@@ -1,7 +1,7 @@
 package com.example.stockmanagement.di
 
 import android.content.Context
-import com.example.stockmanagement.models.datastore.UserPreferences
+import com.example.stockmanagement.data.models.datastore.UserPreferences
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
