@@ -28,6 +28,7 @@ class DatabaseModule {
             "stock"
         ).build()
     }
+
     // dependency injection for ItemDao.
     @Provides
     fun provideItemDao(appDatabase: AppDatabase): ItemDao {
