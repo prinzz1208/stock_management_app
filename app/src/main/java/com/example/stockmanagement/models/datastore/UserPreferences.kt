@@ -20,6 +20,7 @@ class UserPreferences @Inject constructor(
         val USER_IS_LOGGED = booleanPreferencesKey("USER_LOGGED")
         val USER_EMAIL = stringPreferencesKey("USER_EMAIL")
         val USER_NAME = stringPreferencesKey("USER_NAME")
+        val USER_TOKEN = stringPreferencesKey("USER_TOKEN")
     }
 
     suspend fun storeUser(userName: String,userEmail:String = "", userLoggedIn:Boolean = false){
